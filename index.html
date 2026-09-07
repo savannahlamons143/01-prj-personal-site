@@ -2,10 +2,151 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The portfolio of Savannah Lamons, a Psychology major and Computer Science minor exploring front-end development and safer AI systems.">
+  <title>Savannah Lamons | Psychology, Front-End Development &amp; AI Behavioral Safety</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <header class="site-header">
+    <nav class="navigation container" aria-label="Main navigation">
+      <a class="logo" href="#home">SL<span>.</span></a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Psychology + Computer Science</p>
+          <h1>Savannah<br><em>Lamons</em></h1>
+          <p class="hero-title">Psychology, Front-End Development &amp; AI Behavioral Safety</p>
+          <p class="hero-intro">I work at the intersection of psychology, front-end development, and AI evaluation. I focus on studying behavior and building more thoughtful systems.</p>
+          <a class="button" href="#projects">Explore my work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-circle"></div>
+          <div class="visual-arch"></div>
+          <div class="visual-inner-arch"></div>
+          <p class="visual-caption">Designed with Intention.<br>Tested with rigor.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="section about-section" id="about">
+      <div class="container about-layout">
+        <div class="section-heading">
+          <p class="eyebrow">A little context</p>
+          <h2>Understand behavior.<br><em>Challenge systems.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p class="lead">I am a Psychology major and Computer Science minor interested in how people interact with technology and how technology can better serve people.</p>
+          <p>My work brings together human behavior, front-end development, research, and the emerging field of AI behavioral safety. I am especially interested in evaluating AI models, studying adversarial behavior, and building safer systems that are easier to understand and trust.</p>
+          <p>Whether I am shaping a user experience or testing the limits of an agent, I bring an observant, interdisciplinary perspective to the process.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading centered-heading">
+          <p class="eyebrow">What I bring</p>
+          <h2>Skills &amp; <em>interests</em></h2>
+        </div>
+        <div class="skills-list">
+          <div class="skill"><i class="fa-brands fa-html5" aria-hidden="true"></i><span>HTML</span></div>
+          <div class="skill"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i><span>CSS</span></div>
+          <div class="skill"><i class="fa-brands fa-js" aria-hidden="true"></i><span>JavaScript</span></div>
+          <div class="skill"><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i><span>AI Model Evaluation</span></div>
+          <div class="skill"><i class="fa-solid fa-brain" aria-hidden="true"></i><span>Behavioral Analysis</span></div>
+          <div class="skill"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Research</span></div>
+          <div class="skill"><i class="fa-solid fa-compass-drafting" aria-hidden="true"></i><span>UX Thinking</span></div>
+          <div class="skill"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><span>Adversarial Testing</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="projects-intro">
+          <div class="section-heading">
+            <p class="eyebrow">Ideas in progress</p>
+            <h2>Selected <em>projects</em></h2>
+          </div>
+          <p>Early-stage research concepts and explorations at the intersection of agents, evaluation, and safety.</p>
+        </div>
+        <div class="project-list">
+          <article class="project-card sage-card">
+            <p class="project-number">01 / 04</p>
+            <div class="project-icon"><i class="fa-solid fa-arrows-to-circle" aria-hidden="true"></i></div>
+            <h3>Multi-Agent<br>Behavioral Drift</h3>
+            <p>Exploring how group dynamics and repeated interactions may shape unexpected agent behavior over time.</p>
+            <span class="project-status">In Development</span>
+          </article>
+          <article class="project-card blue-card">
+            <p class="project-number">02 / 04</p>
+            <div class="project-icon"><i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i></div>
+            <h3>Agent Safety<br>Tripwire Framework</h3>
+            <p>Designing a framework for identifying behavioral signals that may call for intervention or closer review.</p>
+            <span class="project-status">Research Concept</span>
+          </article>
+          <article class="project-card cream-card">
+            <p class="project-number">03 / 04</p>
+            <div class="project-icon"><i class="fa-solid fa-eye-slash" aria-hidden="true"></i></div>
+            <h3>Monitor-Evasion<br>Evaluations</h3>
+            <p>Thinking through evaluation methods for agents that adapt their behavior around monitoring systems.</p>
+            <span class="project-status">Research Concept</span>
+          </article>
+          <article class="project-card rose-card">
+            <p class="project-number">04 / 04</p>
+            <div class="project-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+            <h3>Emergent<br>Communication Lab</h3>
+            <p>Investigating how communication patterns emerge between agents and what those patterns can reveal.</p>
+            <span class="project-status">In Development</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-layout">
+        <div class="section-heading">
+          <p class="eyebrow">Let's connect</p>
+          <h2>Let's build more 
+            <br>thoughtful systems <em>through conversation.</em> </h2>
+        </div>
+        <div class="contact-links">
+          <p>I'm open to collaborations and opportunities across AI evaluation, behavioral safety, research, and human-centered technology.</p>
+          <a href="mailto:skl71@txstate.edu"><i class="fa-regular fa-envelope" aria-hidden="true"></i> skl71@txstate.edu</a>
+          <a href="https://github.com/savannahlamons143"><i class="fa-brands fa-github" aria-hidden="true"></i> github.com/savannahlamons143</a>
+          <a href="https://www.linkedin.com/in/savannahlamons/"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>www.linkedin.com/in/savannahlamons/ </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Savannah Lamons</p>
+      <p>Built with curiosity &amp; care.</p>
+      <a href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+    </div>
+  </footer>
 </body>
 </html>
