@@ -864,3 +864,119 @@ body.modal-open {
   }
 
 }
+
+/* ========================================
+   FEATURED RESEARCH + FUTURE DIRECTIONS
+======================================== */
+
+.research-grid {
+  display: block;
+}
+
+.featured-research {
+  width: 100%;
+  min-height: 340px;
+}
+
+.future-research {
+  margin-top: 50px;
+}
+
+.future-research-heading {
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+.future-research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.future-research-grid .project-card {
+  min-width: 0;
+  min-height: 410px;
+}
+
+.research-carousel-controls {
+  display: none;
+}
+
+
+/* ========================================
+   MOBILE RESEARCH CAROUSEL
+======================================== */
+
+@media (max-width: 800px) {
+
+  .research-grid {
+    display: block;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .research-grid .featured-research {
+    width: 100%;
+    min-height: 340px;
+  }
+
+  .future-research-grid {
+    display: block;
+    overflow: visible;
+  }
+
+  .future-research-grid .project-card {
+    display: none;
+    width: 100%;
+    min-height: 390px;
+  }
+
+  .future-research-grid .project-card.is-active {
+    display: flex;
+  }
+
+  .research-carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 25px;
+  }
+
+  .carousel-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+
+    border: 1px solid var(--dusty-blue);
+    border-radius: 50%;
+    background: var(--warm-white);
+
+    color: var(--dusty-blue);
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition:
+      background 0.2s ease,
+      color 0.2s ease;
+  }
+
+  .carousel-arrow:hover,
+  .carousel-arrow:focus-visible {
+    background: var(--dusty-blue);
+    color: var(--warm-white);
+  }
+
+  .carousel-counter {
+    min-width: 65px;
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+}

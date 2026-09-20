@@ -86,3 +86,66 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+/* ========================================
+   MOBILE RESEARCH CAROUSEL
+======================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const cards = [
+    ...document.querySelectorAll(
+      ".future-research-grid .project-card"
+    )
+  ];
+
+  const previousButton =
+    document.getElementById("research-prev");
+
+  const nextButton =
+    document.getElementById("research-next");
+
+  const counter =
+    document.getElementById("research-counter");
+
+  if (
+    cards.length === 0 ||
+    !previousButton ||
+    !nextButton ||
+    !counter
+  ) {
+    return;
+  }
+
+  let currentIndex = 0;
+
+  function showCard(index) {
+
+    currentIndex =
+      (index + cards.length) % cards.length;
+
+    cards.forEach((card, cardIndex) => {
+      card.classList.toggle(
+        "is-active",
+        cardIndex === currentIndex
+      );
+    });
+
+    counter.textContent =
+      String(currentIndex + 1).padStart(2, "0") +
+      " / " +
+      String(cards.length).padStart(2, "0");
+  }
+
+  previousButton.addEventListener("click", () => {
+    showCard(currentIndex - 1);
+  });
+
+  nextButton.addEventListener("click", () => {
+    showCard(currentIndex + 1);
+  });
+
+  showCard(0);
+
+});

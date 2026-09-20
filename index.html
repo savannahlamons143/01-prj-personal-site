@@ -13,8 +13,9 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  
-  <link rel="stylesheet" href="style.css?v=3">
+
+<link rel="stylesheet" href="style.css?v=4">
+
 </head>
 
 <body>
@@ -156,7 +157,9 @@
             <h3>Sustainability<br>Through the Ages</h3>
 
             <p>
-              Developed through the Global Career Accelerator's Intel sustainability project, this responsive webpage incorporates Bootstrap, multilingual support, interactive components, and Lighthouse performance optimization.
+              Developed through the Global Career Accelerator's Intel sustainability project, this responsive webpage
+              incorporates Bootstrap, multilingual support, interactive components, and Lighthouse performance
+              optimization.
             </p>
 
             <a class="project-link" href="https://savannahlamons143.github.io/03-prj-intel-localization/"
@@ -249,87 +252,119 @@
 
           </article>
 
+        </div>
 
-          <!-- Future Extension 1 -->
-          <article class="project-card blue-card">
+        <!-- Future Research Directions -->
+        <div class="future-research">
 
-            <p class="project-number">
-              02 / 04 · FUTURE RESEARCH
-            </p>
+          <h3 class="future-research-heading">
+            Future Research Directions
+          </h3>
 
-            <div class="project-icon">
-              <i class="fa-solid fa-people-arrows" aria-hidden="true"></i>
-            </div>
+          <div class="future-research-grid" id="future-research-cards">
 
-            <h3>Authority Dynamics<br>& Agent Behavior</h3>
+            <!-- Future Extension 1 -->
+            <article class="project-card blue-card">
 
-            <p>
-              Exploring how authority-like coordinating agents,
-              task difficulty, and objective or time pressure
-              may influence unsafe-strategy adoption and resistance.
-            </p>
+              <p class="project-number">
+                02 / 04 · FUTURE RESEARCH
+              </p>
 
-            <span class="project-status">
-              Future Research Direction
+              <div class="project-icon">
+                <i class="fa-solid fa-people-arrows" aria-hidden="true"></i>
+              </div>
+
+              <h3>Authority Dynamics<br>& Agent Behavior</h3>
+
+              <p>
+                Exploring how authority-like coordinating agents,
+                task difficulty, and objective or time pressure
+                may influence unsafe-strategy adoption and resistance.
+              </p>
+
+              <span class="project-status">
+                Future Research Direction
+              </span>
+
+            </article>
+
+
+            <!-- Future Extension 2 -->
+            <article class="project-card cream-card">
+
+              <p class="project-number">
+                03 / 04 · FUTURE RESEARCH
+              </p>
+
+              <div class="project-icon">
+                <i class="fa-solid fa-eye-slash" aria-hidden="true"></i>
+              </div>
+
+              <h3>Monitoring &<br>Behavioral Observability</h3>
+
+              <p>
+                Investigating whether safety interventions reduce
+                unsafe behavior or change how agents communicate
+                and respond to monitoring, including the potential
+                for evasive strategies.
+              </p>
+
+              <span class="project-status">
+                Future Research Direction
+              </span>
+
+            </article>
+
+
+            <!-- Future Extension 3 -->
+            <article class="project-card rose-card">
+
+              <p class="project-number">
+                04 / 04 · FUTURE RESEARCH
+              </p>
+
+              <div class="project-icon">
+                <i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i>
+              </div>
+
+              <h3>Researcher Bias &<br>Institutional Influences</h3>
+
+              <p>
+                Examining how researcher assumptions, benchmark
+                design decisions, organizational priorities, and
+                evaluation criteria may influence the measurement
+                and interpretation of AI behavior and safety outcomes.
+              </p>
+
+              <span class="project-status">
+                Future Research Direction
+              </span>
+
+            </article>
+
+          </div>
+
+          <!-- Mobile Carousel Navigation -->
+          <div class="research-carousel-controls" aria-label="Future research navigation">
+
+            <button class="carousel-arrow" type="button" id="research-prev" aria-label="Previous research concept"
+              aria-controls="future-research-cards">
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+
+            <span class="carousel-counter" id="research-counter" aria-live="polite">
+              01 / 03
             </span>
 
-          </article>
+            <button class="carousel-arrow" type="button" id="research-next" aria-label="Next research concept"
+              aria-controls="future-research-cards">
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
 
-
-          <!-- Future Extension 2 -->
-          <article class="project-card cream-card">
-
-            <p class="project-number">
-              03 / 04 · FUTURE RESEARCH
-            </p>
-
-            <div class="project-icon">
-              <i class="fa-solid fa-eye-slash" aria-hidden="true"></i>
-            </div>
-
-            <h3>Monitoring &<br>Behavioral Observability</h3>
-
-            <p>
-              Investigating whether safety interventions reduce
-              unsafe behavior or change how agents communicate
-              and respond to monitoring, including the potential
-              for evasive strategies.
-            </p>
-
-            <span class="project-status">
-              Future Research Direction
-            </span>
-
-          </article>
-
-
-          <!-- Future Extension 3 -->
-          <article class="project-card rose-card">
-
-            <p class="project-number">
-              04 / 04 · FUTURE RESEARCH
-            </p>
-
-            <div class="project-icon">
-              <i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i>
-            </div>
-
-            <h3>Researcher Bias &<br>Institutional Influences</h3>
-
-            <p>
-              Examining how researcher assumptions, benchmark
-              design decisions, organizational priorities, and
-              evaluation criteria may influence the measurement
-              and interpretation of AI behavior and safety outcomes.
-            </p>
-
-            <span class="project-status">
-              Future Research Direction
-            </span>
-
-          </article>
+          </div>
 
         </div>
+      </div>
       </div>
     </section>
 
@@ -440,7 +475,7 @@
     </div>
   </footer>
 
-  <script src="script.js?v=1" defer></script>
+<script src="script.js?v=2" defer></script>
 
 </body>
 
