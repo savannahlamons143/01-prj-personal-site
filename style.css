@@ -660,7 +660,7 @@ h2 {
 
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
 }
 
@@ -792,14 +792,30 @@ body.modal-open {
    RESPONSIVE DESIGN
 ======================================== */
 
+
 @media (max-width: 800px) {
 
   .research-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 18px;
+
+    padding-bottom: 20px;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 0;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .featured-research {
-    grid-column: auto;
+  .research-grid .project-card {
+    flex: 0 0 82%;
+    min-width: 0;
+    scroll-snap-align: start;
+  }
+
+  .research-grid .featured-research {
+    flex: 0 0 100%;
   }
 
 }
