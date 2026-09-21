@@ -149,3 +149,33 @@ document.addEventListener("DOMContentLoaded", () => {
   showCard(0);
 
 });
+
+
+/* ========================================
+   BACK TO TOP BUTTON
+======================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const backToTop = document.getElementById("back-to-top");
+
+  if (!backToTop) {
+    return;
+  }
+
+  function toggleBackToTop() {
+    if (window.scrollY > 400) {
+      backToTop.classList.add("is-visible");
+    } else {
+      backToTop.classList.remove("is-visible");
+    }
+  }
+
+  window.addEventListener("scroll", toggleBackToTop, {
+    passive: true
+  });
+
+  toggleBackToTop();
+
+});
+
